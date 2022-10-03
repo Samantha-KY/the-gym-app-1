@@ -69,6 +69,14 @@ filter: blur(200px);
     .paragraph-large {
       @apply text-[18px];
     }
+    
+    .btn{
+      @apply w-[1024px] h-[666.57px] mx-auto mt-10 bg-neutral-50;
+    }
+
+    .body-btn{
+      @apply bg-slate-800 rounded-lg w-[144px] text-white h-[56px];
+    }
   }
   
   @font-face {
