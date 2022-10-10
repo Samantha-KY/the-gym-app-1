@@ -5,107 +5,166 @@
 @tailwind utilities;
 
 .text-gradient {
-    background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
-    background-clip: text;
-    fill: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-.body-background{
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-filter: blur(200px);
+  background: -webkit-linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+  background-clip: text;
+  fill: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.body-background {
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  filter: blur(200px);
 }
 
 .color-primary {
-    color: #1d2130;
-  }
-  
-  @layer base {
-    h1 {
-      @apply font-roboto text-[56px] leading-[56.7px];
-    }
-    h2 {
-      @apply font-roboto text-[48px] leading-[56.7px];
-    }
-    h3 {
-      @apply font-roboto text-[24px] leading-[56.7px];
-    }
-  
-    h4 {
-      @apply font-roboto text-[24px];
-    }
-    h5 {
-      @apply font-roboto text-[18px];
-    }
-    h6 {
-      @apply font-roboto text-[16px];
-    }
-    p {
-      @apply font-roboto text-[16px];
-    }
-  }
-  
-  @layer components {
-    .primary-btn {
-      @apply font-roboto font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
-    }
-  
-    .primary-btn--full-width {
-      @apply font-roboto font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
-    }
-  
-    .primary-btn--fill-white {
-      @apply font-roboto font-extrabold text-primary bg-white hover:bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
-    }
-  
-    .primary-btn--outline {
-      @apply primary-btn--fill-white border-2 border-light-violet;
-    }
-  
-    .gradient-paragraph {
-      @apply text-gradient;
-    }
-  
-    .paragraph-large {
-      @apply text-[18px];
-    }
-    
-    .btn{
-      @apply w-[1024px] h-[666.57px] mx-auto mt-10 bg-neutral-50;
-    }
+  color: #1d2130;
+}
 
-    .body-btn{
-      @apply bg-slate-800 rounded-lg w-[144px] text-white h-[56px];
-    }
+
+@layer base {
+  h1 {
+    @apply font-roboto text-[56px] leading-[56.7px];
   }
-  
-  @font-face {
-    font-family: "roboto";
-    src: url("/assets/fonts/Roboto-Regular.ttf");
+
+  h2 {
+    @apply font-roboto text-[48px] leading-[56.7px];
   }
-  
-  @font-face {
-    font-family: "roboto-bold";
-    src: url("/assets/fonts/Roboto-Bold.ttf");
+
+  h3 {
+    @apply font-roboto text-[24px] leading-[56.7px];
   }
-  
-  .blur-gradient {
-    position: absolute;
-    width: 524px;
-    height: 496px;
-    right: 566px;
-    top: 314px;
-    left: 100px;
-    transform: rotate(200deg);
-    border-radius: 100%;
-  
-    background: radial-gradient(
-      483.9% 2719.65% at -49.5% -250%,
+
+  h4 {
+    @apply font-roboto text-[24px];
+  }
+
+  h5 {
+    @apply font-roboto text-[18px];
+  }
+
+  h6 {
+    @apply font-roboto text-[16px];
+  }
+
+  p {
+    @apply font-roboto text-[16px];
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply font-roboto font-extrabold text-white bg-primary hover: bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
+  }
+
+  .primary-btn--full-width {
+    @apply font-roboto font-extrabold text-white bg-primary hover: bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
+  }
+
+  .primary-btn--fill-white {
+    @apply font-roboto font-extrabold text-primary bg-white hover: bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-xsm text-paragraph;
+  }
+
+  .primary-btn--outline {
+    @apply primary-btn--fill-white border-2 border-light-violet;
+  }
+
+  .gradient-paragraph {
+    @apply text-gradient;
+  }
+
+  .paragraph-large {
+    @apply text-[18px];
+  }
+
+  .btn {
+    @apply w-[1024px] h-[666.57px] mx-auto mt-10 bg-neutral-50;
+  }
+
+  .body-btn {
+    @apply bg-slate-800 rounded-lg w-[144px] text-white h-[56px];
+  }
+
+  .back-secondary {
+    @apply absolute w-[524px] h-[496px] right-[566px] top-[313px] body-background -z-20;
+  }
+
+  .mail-input {
+    @apply flex justify-between items-center h-[72px] mx-auto bg-white w-[576px] mt-10 rounded-[20px] p-3;
+  }
+
+  .body-image {
+    @apply w-[1024px] h-[666.57px] mx-auto mt-10 bg-neutral-50;
+  }
+
+  .list {
+    @apply w-[504px] h-[60px] right-[120px] top-[2060px];
+  }
+
+  .feature-bg {
+    @apply flex bg-[#D798E1]/20 px-[66px] py-[64px] items-center justify-between rounded-[24px] my-10;
+  }
+
+  .back-about {
+    @apply bg-[#D798E1]/20 px-[66px] py-[64px] rounded-[24px];
+  }
+
+  .about-subscribe {
+    @apply bg-[#2B2E3C];
+  }
+
+  .blog-image {
+    @apply absolute top-[30rem] left-0 -z-20 w-[800px] blur-3xl rounded-full;
+
+  }
+
+  .blog-image--top {
+    @apply absolute top-[8rem] right-0 -z-20 w-[800px] blur-3xl rounded-full;
+  }
+
+  .blog-post {
+    @apply px-[66px] py-[64px] items-center justify-between rounded-[24px];
+  }
+
+  .pricing-image--size{
+    @apply  w-[900px] h-[900px] ;
+  }
+
+  .product-logo{
+    @apply left-[566px] top-[168px] right-[78px];
+  }
+}
+
+
+
+
+@font-face {
+  font-family: "roboto";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("/assets/fonts/Roboto-Bold.ttf");
+}
+
+.blur-gradient {
+  position: absolute;
+  width: 524px;
+  height: 496px;
+  right: 566px;
+  top: 314px;
+  left: 100px;
+  transform: rotate(200deg);
+  border-radius: 100%;
+
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%,
       #d798e1 17.55%,
       #9bffa5 27.56%,
       #aed3ff 49.89%,
       #c9d4ef 56.53%,
-      #cacffa 65.69%
-    );
-    filter: blur(200px);
-  }
+      #cacffa 65.69%);
+  filter: blur(200px);
+}
