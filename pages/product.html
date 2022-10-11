@@ -8,61 +8,40 @@
     <link rel="stylesheet" href="../src/input.css" />
     <title>Document</title>
   </head>
-  <body class="relative w-full h-full font-roboto">
-    <nav class="flex justify-between items-center py-2">
-      <div class="font-roboto-bold text-3xl">{finsweet</div>
-
-      <div class="flex gap-6 items-center">
-        <p class="color-primary font-roboto text-paragraph">
-          <a href="./home.html">Home</a>
-        </p>
-        <p class="color-primary font-roboto text-paragraph">
-          <a href="./product.html">Product</a>
-        </p>
-        <p class="color-primary font-roboto text-paragraph">
-          <a href="./pricing.html">Pricing</a>
-        </p>
-        <p class="color-primary font-roboto text-paragraph">
-          <a href="./aboutUs.html">About Us</a>
-        </p>
-        <p class="color-primary font-roboto text-paragraph">
-          <a href="./blog.html">Blog</a>
-        </p>
-        <p class="color-primary font-roboto text-paragraph">
-          <a href="./contact.html">Contact</a>
-        </p>
-        <p class="primary-btn">Free trial</p>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__logo">{finsweet</h1>
+      <div class="nav__menu">
+        <p><a href="./home.html"> Home </a></p>
+        <p><a href="./product.html">Product</a></p>
+        <p><a href="./pricing.html"> Pricing</a></p>
+        <p><a href="./aboutUs.html"> About us </a></p>
+        <p><a href="./blog.html"> Blog </a></p>
+        <p><a href="./contact.html"> Contact</a></p>
+        <button class="primary-btn">Free trial</button>
       </div>
     </nav>
-    <div class="grid grid-cols-2 mt-20 mx-20 gap-10 my-20">
+    <div class="product-body">
       <div>
-        <h3 class="font-bold text-3xl leading-normal text-slate-800 mt-5">
+        <h3 class="product-body__title">
           To upscale your business<br />
           to the next level
         </h3>
-        <p>
+        <p class="product-body__text">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua invidunt ut labore.
         </p>
-        <div class="flex gap-2">
+        <div class="product-body__buttons">
           <button class="primary-btn">Get Started</button>
-          <button class="bg-slate-100 rounded-lg w-36 text-black h-14 border-2">
-            Contact us
-          </button>
+          <button class="secondary-btn">Contact us</button>
         </div>
       </div>
-      <div
-        class="absolute max-w-xl max-h-max body-background -z-20 product-logo"
-      ></div>
-      <img
-        src="../image/image1.jpg"
-        alt=""
-        class="max-w-2xl max-h-fit left-\[744px\]"
-      />
+      <div class="product-body__background"></div>
+      <img src="../image/image1.jpg" alt="" class="product-body__image" />
     </div>
 
-    <section class="flex justify-between items-center px-20 py-16">
+    <section class="logo-content">
       <img src="/assets/images/Logo 1.png" alt="logo 1" />
       <img src="/assets/images/Logo 2.png" alt="logo 1" />
       <img src="/assets/images/Logo 3.png" alt="logo 1" />
@@ -70,68 +49,78 @@
       <img src="/assets/images/Logo 5.png" alt="logo 1" />
     </section>
 
-    <section class="relative pt-20 pr-20">
-      <h1 class="text-center">
+    <section class="service">
+      <h1 class="service__title">
         Get the best out of your company<br />
         with our service
       </h1>
       <img
         src="../image/Blur-Gradient-home-impression.jpg"
-        class="absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10"
+        class="service__background"
       />
-      <div
-        class="grid grid-cols-3 gap-10 bg-white/60 mt-16 p-20 rounded-tr-[5rem]"
-      >
-        <div class="flex flex-col gap-3">
-          <img src="../assets/vectors/security-solid.svg" class="w-16 h-16" />
-          <h3>Security and privacy</h3>
-          <p class="text-base text-primary/80">
+      <div class="service__container">
+        <div class="service__container-card">
+          <img
+            src="../assets/vectors/security-solid.svg"
+            class="service__container-image"
+          />
+          <h3 class="service__container-header">Security and privacy</h3>
+          <p class="service__container-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor.
           </p>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="service__container-card">
           <img
             src="../assets/vectors/neural-network-icon.svg"
-            class="w-16 h-16"
+            class="service__container-image"
           />
-          <h3>Built-in AI features</h3>
-          <p class="text-sm text-primary/80">
+          <h3 class="service__container-header">Built-in AI features</h3>
+          <p class="service__container-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor.
           </p>
         </div>
-        <div class="flex flex-col gap-3">
-          <img src="../assets/vectors/collaborate-icon.svg" class="w-16 h-16" />
-          <h3>Collaborate with others</h3>
-          <p class="text-sm text-primary/80">
+        <div class="service__container-card">
+          <img
+            src="../assets/vectors/collaborate-icon.svg"
+            class="service__container-image"
+          />
+          <h3 class="service__container-header">Collaborate with others</h3>
+          <p class="service__container-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor.
           </p>
         </div>
-        <div class="flex flex-col gap-3">
-          <img src="../assets/vectors/memory-card-icon.svg" class="w-16 h-16" />
-          <h3>Real time sync</h3>
-          <p class="text-sm text-primary/80">
+        <div class="service__container-card">
+          <img
+            src="../assets/vectors/memory-card-icon.svg"
+            class="service__container-image"
+          />
+          <h3 class="service__container-header">Real time sync</h3>
+          <p class="service__container-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor.
           </p>
         </div>
-        <div class="flex flex-col gap-3">
-          <img src="../assets/vectors/nlp.svg" class="w-16 h-16" />
-          <h3>Built-in AI features</h3>
-          <p class="text-sm text-primary/80">
+        <div class="service__container-card">
+          <img
+            src="../assets/vectors/nlp.svg"
+            class="service__container-image"
+          />
+          <h3 class="service__container-header">Built-in AI features</h3>
+          <p class="service__container-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor.
           </p>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="service__container-card">
           <img
             src="../assets/vectors/note-organization-icon.svg"
-            class="w-16 h-16"
+            class="service__container-image"
           />
-          <h3>Easy notes organization</h3>
-          <p class="text-sm text-primary/80">
+          <h3 class="service__container-header">Easy notes organization</h3>
+          <p class="service__container-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor.
           </p>
@@ -139,15 +128,15 @@
       </div>
     </section>
 
-    <section class="px-20 py-24 flex flex-col gap-10">
-      <div class="flex justify-between items-center relative">
-        <div class="flex flex-col gap-8 relative">
-          <h4 class="text-gradient">Marketing insights</h4>
-          <h2 class="leading-tight">
+    <section class="market">
+      <div class="market__content">
+        <div class="market__content-item market__content-item--position">
+          <h4 class="market__content-title">Marketing insights</h4>
+          <h2 class="market__content-header">
             Data-driven client<br />
             feedback
           </h2>
-          <p class="font-roboto text-primary/90">
+          <p class="market__content-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy<br />
             eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br />
@@ -156,19 +145,19 @@
         </div>
         <img
           src="../assets/images/Blur Gradient-marketing-1.png"
-          class="absolute top-0 left-auto -z-20 blur-3xl"
+          class="market__content-image"
         />
-        <img src="../assets/images/marketing--1.png" class="w-[466px]" />
+        <img src="../assets/images/marketing--1.png" class="market__image" />
       </div>
-      <div class="flex justify-between items-center relative mt-20">
-        <img src="../assets/images/marketing-2.png" class="max-w-md" />
-        <div class="flex flex-col gap-8 w-fit">
+      <div class="market__content market__content--top">
+        <img src="../assets/images/marketing-2.png" class="market__image" />
+        <div class="market__content-item market__content-item--fit">
           <h4 class="text-gradient">Time tracker</h4>
-          <h2 class="leading-tight">
+          <h2 class="market__content-header">
             Track your project<br />
             performance
           </h2>
-          <p class="font-roboto text-primary/90">
+          <p class="market__content-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy<br />
             eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br />
@@ -176,87 +165,87 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-between items-center relative mt-20">
-        <div class="flex flex-col gap-8">
-          <h4 class="text-gradient">Lead Generation</h4>
-          <h2 class="leading-tight">More leads that convert</h2>
-          <p class="font-roboto text-primary/90">
+      <div class="market__content market__content--top">
+        <div class="market__content-item">
+          <h4 class="market__content-title">Lead Generation</h4>
+          <h2 class="market__content-header">More leads that convert</h2>
+          <p class="market__content-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy<br />
             eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br />
             sed diam voluptua invidunt ut labore.
           </p>
         </div>
-        <div class="relative">
-          <img src="../assets/images/marketing--1.png" class="max-w-md" />
+        <div class="market__image-position">
+          <img src="../assets/images/marketing--1.png" class="market__image" />
         </div>
         <img
           src="../assets/images/Blur Gradient-marketing-2.png"
-          class="absolute top-0 right-0 bottom-0 max-w-lg max-h-fit -z-10 blur-3xl"
+          class="market__background"
         />
       </div>
-      <div class="flex justify-between items-center mt-20 flex-row-reverse">
-        <div class="flex flex-col gap-8">
-          <h4 class="text-gradient">Remote teams</h4>
-          <h2 class="leading-tight">Real-time collaboration</h2>
-          <p class="font-roboto text-primary/90">
+      <div class="market__content-last">
+        <div class="market__content-item">
+          <h4 class="market__content-title">Remote teams</h4>
+          <h2 class="market__content-header">Real-time collaboration</h2>
+          <p class="market__content-text">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy<br />
             eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<br />
             sed diam voluptua invidunt ut labore.
           </p>
         </div>
-        <img src="../assets/images/marketing-2.png" class="max-w-md" />
+        <img src="../assets/images/marketing-2.png" class="market__image" />
       </div>
     </section>
 
-    <section class="px-20 mt-20">
-      <h1 class="text-center py-8 leading-tight">Features</h1>
+    <section class="feature">
+      <h1 class="feature__title">Features</h1>
 
-      <div class="feature-bg">
-        <div class="flex flex-col gap-8">
+      <div class="feature__background">
+        <div class="feature__content">
           <img
-            src="../assets/vectors/security-icon.svg"
+            src="/assets/vectors/security-icon.svg"
             alt="security mark"
-            class="w-16 h-16"
+            class="feature__content-image"
           />
-          <h3 class="text-heading-2md font-roboto font-extrabold leading-tight">
+          <h3 class="feature__content-title">
             Advanced 256-bit<br />
             encryption
           </h3>
-          <p class="text-primary/80 font-roboto">
+          <p class="feature__content-text">
             Lorem ipsum dolor sit amet, consetetur<br />
             sadipscing elitr, sed diam nonumy eirmod<br />
             tempor.
           </p>
         </div>
-        <div class="flex flex-col gap-8">
+        <div class="feature__content">
           <img
-            src="../assets/vectors/messaging-icon.svg"
+            src="/assets/vectors/messaging-icon.svg"
             alt="security mark"
-            class="w-12 h-12"
+            class="feature__content-image"
           />
-          <h3 class="text-heading-2md font-roboto font-extrabold leading-tight">
+          <h3 class="feature__content-title">
             Simple collaboration<br />
             tools
           </h3>
-          <p class="text-primary/80 font-roboto">
+          <p class="feature__content-text">
             Lorem ipsum dolor sit amet, consetetur<br />
             sadipscing elitr, sed diam nonumy eirmod<br />
             tempor.
           </p>
         </div>
-        <div class="flex flex-col gap-8">
+        <div class="feature__content">
           <img
-            src="../assets/vectors/AI-icon.svg"
+            src="/assets/vectors/AI-icon.svg"
             alt="security mark"
-            class="w-12 h-12"
+            class="feature__content-image"
           />
-          <h3 class="text-heading-2md font-roboto font-extrabold leading-tight">
+          <h3 class="feature__content-title">
             Customizable AI<br />
             features
           </h3>
-          <p class="text-primary/80 font-roboto">
+          <p class="feature__content-text">
             Lorem ipsum dolor sit amet, consetetur<br />
             sadipscing elitr, sed diam nonumy eirmod<br />
             tempor.
@@ -265,80 +254,72 @@
       </div>
     </section>
 
-    <section class="flex flex-col mt-20">
-      <div
-        class="flex flex-col justify-center items-center gap-9 relative pb-32"
-      >
-        <h1 class="text-center leading-tight">
+    <section class="footer">
+      <div class="footer__content">
+        <h1 class="footer__title">
           Are you ready to grow your<br />
           business with us?
         </h1>
-        <p>
+        <p class="footer__text">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy.
         </p>
         <button class="primary-btn">View Pricing</button>
 
         <img
-          src="../assets/images/BlurGradient-footer.png"
-          class="absolute bottom-0 w-full h-full -z-10 blur-3xl -mb-16"
+          src="/assets/images/BlurGradient-footer.png"
+          class="footer__background"
         />
       </div>
 
-      <footer class="bg-primary text-gray-400 py-20 px-20 flex flex-col gap-9">
-        <div class="font-roboto grid grid-cols-5">
-          <ul class="flex flex-col gap-3">
-            <li class="text-white font-bold paragraph-large">Company</li>
-            <li class="cursor-pointer">About Us</li>
-            <li class="cursor-pointer">Why Choose us</li>
-            <li class="cursor-pointer">Pricing</li>
-            <li class="cursor-pointer">Testimonial</li>
+      <section class="footer__container">
+        <div class="footer__container-content">
+          <ul class="footer__container-list">
+            <li class="footer__container-list-title">Company</li>
+            <li>About Us</li>
+            <li>Why Choose us</li>
+            <li>Pricing</li>
+            <li>Testimonial</li>
           </ul>
-          <ul class="flex flex-col gap-3">
-            <li class="text-white font-bold paragraph-large">Resources</li>
-            <li class="cursor-pointer">Privacy Policy</li>
-            <li class="cursor-pointer">Terms and Condition</li>
-            <li class="cursor-pointer">Blog</li>
-            <li class="cursor-pointer">Contact Us</li>
+          <ul class="footer__container-list">
+            <li class="footer__container-list-title">Resources</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Condition</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
           </ul>
           <ul class="flex flex-col gap-3">
             <li class="text-white font-bold paragraph-large">Product</li>
-            <li class="cursor-pointer">Project managment</li>
-            <li class="cursor-pointer">Time tracker</li>
-            <li class="cursor-pointer">Time schedule</li>
-            <li class="cursor-pointer">Lead generate</li>
-            <li class="cursor-pointer">Remote Collaboration</li>
+            <li>Project managment</li>
+            <li>Time tracker</li>
+            <li>Time schedule</li>
+            <li>Lead generate</li>
+            <li>Remote Collaboration</li>
           </ul>
 
-          <div class="flex flex-col gap-4 col-span-2">
-            <h1 class="font-roboto-bold text-white text-3xl">{finsweet</h1>
+          <div class="footer__subscribe">
+            <h1 class="footer__logo">{finsweet</h1>
 
-            <div class="w-full flex flex-col gap-4">
-              <p class="text-white font-bold paragraph-large">
-                Subscribe to our Newsletter
-              </p>
-              <div
-                class="flex gap-3 justify-between rounded-xsm about-subscribe w-full h-fit"
-              >
+            <div class="footer__subscribe-content">
+              <p class="footer__subscribe-title">Subscribe to our Newsletter</p>
+              <div class="footer__subscribe-input">
                 <input
                   type="text"
                   placeholder="Enter Your Email"
-                  class="outline-none px-4 font-roboto bg-transparent text-white"
+                  class="footer__subscribe-input-holder"
                 />
-                <button
-                  class="primary-btn primary-btn--fill-white h-full w-full"
-                >
+                <button class="primary-btn primary-btn--fill-white">
                   Get Free trial
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex justify-center mt-5">
-          <img src="../assets/vectors/Line.svg" class="w-full" />
-          <div class="w-full flex justify-around items-center">
-            <p class="text-xs">© Copyright Finsweet 2022</p>
-            <div class="flex gap-8">
+        <div class="footer__link">
+          <img src="/assets/vectors/Line.svg" class="footer__line" />
+          <div class="footer__link-content">
+            <p class="footer__link-text">© Copyright Finsweet 2022</p>
+            <div class="footer__link-space">
               <svg
                 width="20"
                 height="20"
@@ -397,9 +378,9 @@
               </svg>
             </div>
           </div>
-          <img src="../assets/vectors/Line.svg" class="w-full" />
+          <img src="/assets/vectors/Line.svg" class="w-full" />
         </div>
-      </footer>
+      </section>
     </section>
   </body>
 </html>
