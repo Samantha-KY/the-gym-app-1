@@ -53,7 +53,7 @@
 }
 
 @layer components {
-  .primary-btn {
+  .primary-btn, .footer__button, .impression__button, .mail__button, .nav__button, .product-hero__button  {
     @apply font-roboto font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-36 h-14 flex justify-center items-center rounded-xsm text-paragraph;
   }
 
@@ -61,7 +61,7 @@
     @apply font-roboto font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-full h-14 flex justify-center items-center rounded-xsm text-paragraph;
   }
 
-  .primary-btn--fill-white {
+  .primary-btn--fill-white, .footer__button--fill-white {
     @apply font-roboto font-extrabold text-primary bg-white hover:bg-primary hover:text-white transition-all duration-500 ease-in-out cursor-pointer w-36 h-14 flex justify-center items-center rounded-xsm text-paragraph;
   }
 
@@ -130,7 +130,7 @@
     @apply max-w-5xl h-[42rem] mx-auto mt-10 bg-neutral-50;
   }
 
-  .body-image__top {
+  .image__space-up {
     @apply mt-10;
   }
 
@@ -146,11 +146,11 @@
     @apply font-roboto font-bold text-4xl leading-10 text-center text-slate-800;
   }
 
-  .quality__box{
+  .quality-box{
     @apply flex flex-row justify-center bg-blue-100 rounded-3xl mx-20 mt-10;
   }
 
-  .quality__box-item{
+  .quality-box__item{
     @apply mt-10 ml-5 mb-10 space-y-3;
   }
 
@@ -214,31 +214,31 @@
     @apply flex mx-20 gap-20 my-20 justify-between items-center;
   }
 
-  .discover__container{
+  .discover__card{
     @apply flex flex-col gap-8;
   }
 
-  .discover__container-title{
+  .discover__card-title{
     @apply text-gradient;
   }
 
-  .discover__container-header{
+  .discover__card-header{
     @apply leading-tight;
   }
 
-  .discover__container-text{
+  .discover__card-text{
     @apply font-roboto text-primary/90;
   }
 
-  .discover__container-content{
+  .discover__card-content{
     @apply flex items-center gap-8;
   }
 
-  .discover__container-content-image{
+  .discover__card-content-image{
     @apply bg-gray-100 p-5 rounded-full;
   }
 
-  .discover__container-content-text{
+  .discover__card-content-text{
     @apply text-lg;
   }
 
@@ -255,7 +255,7 @@
   }
 
   .feature__card{
-    @apply flex flex-col gap-8;
+    @apply discover__container;
   }
 
   .feature__card-image{
@@ -298,7 +298,7 @@
     @apply text-2xl;
   }
 
-  .customer__card-position{
+  .customer__card-title{
     @apply text-right text-xs;
   }
 
@@ -376,10 +376,6 @@
 
   .footer__media-icon{
     @apply flex gap-8;
-  }
-
-  .back-about {
-    @apply bg-[#D798E1]/20 px-16 py-16 rounded-3xl;
   }
 
   .about-subscribe {
