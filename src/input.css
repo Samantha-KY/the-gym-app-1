@@ -53,7 +53,7 @@
 }
 
 @layer components {
-  .primary-btn, .footer__button, .impression__button, .mail__button, .nav__button, .product-hero__button  {
+  .primary-btn, .footer__button, .impression__button, .mail__button, .nav__button, .product-hero__card-primary-button  {
     @apply font-roboto font-extrabold text-white bg-primary hover:bg-light-violet hover:text-primary transition-all duration-500 ease-in-out cursor-pointer w-36 h-14 flex justify-center items-center rounded-xsm text-paragraph;
   }
 
@@ -69,7 +69,7 @@
     @apply primary-btn--fill-white border-2 border-light-violet;
   }
 
-  .secondary-btn{
+  .secondary-btn, .product-hero__card-secondary-button{
     @apply bg-slate-100 rounded-lg w-36 text-black h-14 border-2;
   }
 
@@ -403,11 +403,11 @@
     @apply grid grid-cols-2 mt-20 mx-20 gap-10 my-20;
   }
 
-  .product-hero__title{
+  .product-hero__card-title{
     @apply font-bold text-3xl leading-normal text-slate-800 mt-5;
   }
 
-  .product-hero__buttons{
+  .product-hero__card-buttons{
     @apply flex gap-2;
   }
 
