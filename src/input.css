@@ -13,9 +13,7 @@
 }
 
 .background {
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  ;
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
   filter: blur(200px);
 }
 
@@ -103,32 +101,32 @@
     @apply bg-slate-800 rounded-lg w-36 text-white h-14;
   }
 
-  .body-background {
+  .home-background {
     @apply absolute w-[33rem] h-[31rem] right-[35rem] top-[20rem] background -z-20;
   }
 
-  .body-background__content {
+  .home-service {
     @apply px-20 flex flex-col justify-center items-center mt-20;
   }
 
-  .body-background__title {
+  .home-service__title {
     @apply font-roboto font-bold text-6xl leading-tight text-center text-slate-800;
   }
 
-  .body-background__paragraph {
+  .home-service__paragraph {
     @apply mt-8 font-roboto font-normal text-lg leading-normal text-center;
   }
 
-  .body-background__mail-input {
+  .mail-input {
     @apply flex justify-between items-center h-16 mx-auto bg-white w-[36rem] mt-10 rounded-sm p-3;
   }
 
 
-  .body-background__input-holder {
+  .mail-input__holder {
     @apply bg-transparent font-roboto;
   }
 
-  .body-image {
+  .image {
     @apply max-w-5xl h-[42rem] mx-auto mt-10 bg-neutral-50;
   }
 
@@ -208,7 +206,7 @@
     @apply w-96 ml-auto;
   }
 
-  .logo-content{
+  .logo-container{
     @apply flex justify-between items-center px-20 py-16;
   }
 
@@ -252,23 +250,23 @@
     @apply text-center py-8;
   }
 
-  .feature__background {
+  .feature__content-container {
     @apply flex bg-[#D798E1]/20 px-16 py-16 items-center justify-between rounded-3xl my-10;
   }
 
-  .feature__content{
+  .feature__card{
     @apply flex flex-col gap-8;
   }
 
-  .feature__content-image{
+  .feature__card-image{
     @apply w-16 h-16;
   }
 
-  .feature__content-title{
+  .feature__card-title{
     @apply text-heading-2md font-roboto font-extrabold leading-tight;
   }
 
-  .feature__content-text{
+  .feature__card-text{
     @apply text-primary/80 font-roboto;
   }
 
@@ -280,7 +278,7 @@
     @apply text-center leading-tight;
   }
 
-  .customer__content{
+  .customer__container{
     @apply grid grid-cols-3 gap-8 py-10;
   }
 
@@ -308,7 +306,7 @@
     @apply flex flex-col mt-20;
   }
 
-  .footer__content{
+  .footer__card{
     @apply flex flex-col justify-center items-center gap-9 relative pb-32;
   }
 
@@ -320,19 +318,19 @@
     @apply absolute bottom-0 w-full h-full -z-10 blur-3xl -mb-16;
   }
 
-  .footer__container{
+  .footer__card{
     @apply bg-primary text-gray-400 py-20 px-20 flex flex-col gap-9;
   }
 
-  .footer__container-content{
+  .footer__card-content{
     @apply font-roboto grid grid-cols-5;
   }
 
-  .footer__container-list{
+  .footer__card-list{
     @apply flex flex-col gap-3;
   }
 
-  .footer__container-list-title{
+  .footer__card-list-title{
     @apply text-white font-bold text-lg;
   }
 
@@ -360,7 +358,7 @@
     @apply outline-none px-4 font-roboto bg-transparent text-white;
   }
 
-  .footer__link{
+  .footer__media{
     @apply flex justify-center mt-5;
   }
 
@@ -368,15 +366,15 @@
     @apply w-full;
   }
 
-  .footer__link-content{
+  .footer__media-content{
     @apply w-full flex justify-around items-center;
   }
 
-  .footer__link-text{
+  .footer__media-text{
     @apply text-xs;
   }
 
-  .footer__link-space{
+  .footer__media-icon{
     @apply flex gap-8;
   }
 
@@ -405,19 +403,19 @@
     @apply w-[56rem] h-[56rem];
   }
 
-  .product-body{
+  .product-hero{
     @apply grid grid-cols-2 mt-20 mx-20 gap-10 my-20;
   }
 
-  .product-body__title{
+  .product-hero__title{
     @apply font-bold text-3xl leading-normal text-slate-800 mt-5;
   }
 
-  .product-body__buttons{
+  .product-hero__buttons{
     @apply flex gap-2;
   }
 
-  .product-body__background{
+  .product-hero__background{
     @apply absolute max-w-xl max-h-max body-background -z-20 nav__logo;
   }
 
@@ -437,19 +435,19 @@
     @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10;
   }
 
-  .service__container{
+  .service__card{
     @apply grid grid-cols-3 gap-10 bg-white/60 mt-16 p-20 rounded-tr-[5rem];
   }
 
-  .service__container-card{
+  .service__card-container{
     @apply flex flex-col gap-3;
   }
 
-  .service__container-image{
+  .service__card-image{
     @apply w-16 h-16;
   }
 
-  .service__container-text{
+  .service__card-text{
     @apply text-base text-primary/80;
   }
 
@@ -457,43 +455,39 @@
     @apply px-20 py-24 flex flex-col gap-10;
   }
 
-  .market__content{
+  .market__card{
     @apply flex justify-between items-center relative;
   }
 
-  .market__content--top{
+  .market__card--space-up{
     @apply mt-20;
   }
 
-  .market__content-last{
-    @apply flex justify-between items-center mt-20 flex-row-reverse;
+  .market__card--reversed{
+    @apply  mt-20 flex-row-reverse;
   }
 
-  .market__content-item{
-    @apply flex flex-col gap-8;
+  .market__card-item{
+    @apply flex flex-col gap-8 relative;
   }
 
-  .market__content-item--position{
-    @apply relative;
-  }
-
-  .market__content-item--fit{
+  .market__card-item--size-fit{
     @apply w-fit;
   }
 
-  .market__content-title{
+  .market__card-title{
     @apply text-gradient;
   }
 
-  .market__content-header{
+  .market__card-header{
     @apply leading-tight;
   }
 
-  .market__content-text{
+  .market__card-text{
     @apply font-roboto text-primary/90;
   }
 
-  .market__content-image{
+  .market__card-image{
     @apply absolute top-0 left-auto -z-20 blur-3xl;
   }
 
@@ -501,7 +495,7 @@
     @apply max-w-md;
   }
 
-  .market__image-position{
+  .market__image-set{
     @apply relative;
   }
 
