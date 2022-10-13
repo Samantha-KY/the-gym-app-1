@@ -12,15 +12,20 @@
   -webkit-text-fill-color: transparent;
 }
 
+.radial{
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%,
+  #d798e1 17.55%,
+  #9bffa5 27.56%,
+  #aed3ff 49.89%,
+  #c9d4ef 56.53%,
+  #cacffa 65.69%);
+filter: blur(200px);
+}
+
 .background {
   background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
   filter: blur(200px);
 }
-
-.color-primary {
-  color: #1d2130;
-}
-
 
 @layer base {
   h1 {
@@ -513,21 +518,8 @@
   src: url("/assets/fonts/Roboto-Bold.ttf");
 }
 
-.blur-gradient {
-  position: absolute;
-  width: 524px;
-  height: 496px;
-  right: 566px;
-  top: 314px;
-  left: 100px;
-  transform: rotate(200deg);
-  border-radius: 100%;
 
-  background: radial-gradient(483.9% 2719.65% at -49.5% -250%,
-      #d798e1 17.55%,
-      #9bffa5 27.56%,
-      #aed3ff 49.89%,
-      #c9d4ef 56.53%,
-      #cacffa 65.69%);
-  filter: blur(200px);
+
+.blur-gradient {
+  @apply radial absolute max-w-lg h-auto right-[35rem] top-72 left-28 rotate-[200deg] rounded-full;
 }
